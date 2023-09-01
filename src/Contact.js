@@ -138,7 +138,7 @@ const Contact = () => {
   return (
 <ContactContainer style={styles.container} id="contactMeSection">
       <MainHeader>Contact Me</MainHeader>
-      <ContactHeader>Contact</ContactHeader>
+      <ContactHeader></ContactHeader>
       <ContactForm onSubmit={handleFormSubmit}>
         <FormInput
           type="text"

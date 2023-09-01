@@ -7,6 +7,17 @@ const ProjectsContainer = styled.section`
   max-height: 100vh;  
 `;
 
+const ProjectsRow = styled.div`
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 3px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; 
+  }
+`;
 
 // Project data
 const projects = [
@@ -46,14 +57,7 @@ const styles = {
     maxWidth: '1500px',  
     margin: '0 auto',  
   },
-  projectsRow: {
-    marginTop: '50px',
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gridTemplateRows: '1fr 1fr',  
-    gridGap: '10px 3px',  
-    width: '100%',
-  },
+  
   header: {
     textAlign: 'center',
     fontSize: '2.7rem'
@@ -67,6 +71,9 @@ const styles = {
     marginBottom: '90px',
     boxSizing: 'border-box',
     overflow: 'hidden',
+    '@media (max-width: 768px)': {
+      marginBottom: '50px',
+    }
   } ,
   
   details: {
@@ -93,6 +100,10 @@ const styles = {
     marginRight: '30px',
     border: '6px solid white',
     transition: 'transform 0.3s ease', 
+    '@media (max-width: 768px)': {
+      width: '320px',
+      height: '160px',
+    }
   },
   projectImageHover: {
     transform: 'scale(1.1)', 
@@ -117,11 +128,12 @@ const Projects = () => {
   return (
     <ProjectsContainer style={styles.container} id="projectsSection">  
       <h2 style={styles.header}>My Projects</h2>
-      <div style={styles.projectsRow}>
-        {projects.map((project, index) => (
-          <ProjectItem key={index} project={project} />
-        ))}
-      </div>
+      <ProjectsRow>
+  {projects.map((project, index) => (
+    <ProjectItem key={index} project={project} />
+  ))}
+</ProjectsRow>
+
     </ProjectsContainer>
   );
 };

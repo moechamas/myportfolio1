@@ -21,8 +21,6 @@ const typewriter = keyframes`
   }
 `;
 
-
-
 const InitializingText = styled.h1`
   font-size: 2.5rem;
   font-family: 'Fira Code', monospace;
@@ -171,29 +169,6 @@ export const InfoBox = styled.div`
     border-radius: 20px 30px 15px 25px;
     max-width: 60%;
   }
-`;
-
-
-
-const NameText = styled.h1`
-  font-weight: bold;
-  margin-bottom: 0.2rem;
-  font-size: 27px;
-  margin-top: -10px;
-  margin-left: 40px;  
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: ${typewriter} 5s steps(30) forwards;
-  border-right: .15em solid lime;
-  color: lime;
-  width: 0; 
-  font-family: 'Fira Code', monospace;
-  @media only screen and (max-width: 768px) {
-    font-size: 18px;
-    margin-left: 10px;
-  }
-
 `;
 
 const Description = styled.p`

@@ -112,9 +112,9 @@ const StyledInfoBox = styled.div`
   height: auto;
   border: 5px solid white;  
   @media (max-width: 768px) { 
-    width: 95%; 
+    width: 80%; 
     padding: 1.5rem;
-    margin-top: -680px;
+    margin-top: -650px;
   }
 
 `;
@@ -157,7 +157,7 @@ const TechLogos = styled.div`
 
   & > ion-icon {
     position: relative;
-    font-size: 4.35rem;
+    font-size: 3.75rem;
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;  
     padding: 15px;
@@ -187,8 +187,7 @@ const AboutMe = () => {
       <RightAlignedBoxWrapper>
         <StyledInfoBox>
           <AboutMeText>
-            I'm a dedicated computer scientist specializing in web development with proficiency in HTML, CSS, JavaScript, and React. My passion for the digital realm doesn't stop at coding; I'm deeply intrigued by the intricacies of the digital world and the stories told in the realm of anime. Outside of my digital pursuits, I find solace on the football field and in the dojo, mastering the arts of jujutsu and muay thai. Above all, my goal is to craft efficient websites that offer outstanding user experiences."
-          </AboutMeText>
+          I'm a skilled computer scientist with a specialization in web development. Proficient in HTML, CSS, JavaScript, and React, my primary focus is on crafting efficient websites that excel in user experience. While I'm passionate about the nuances of the digital world, I also find balance in martial arts, practicing jujutsu and muay thai. My ultimate aim is to merge my technical expertise with innovative solutions to address modern web challenges.          </AboutMeText>
           <TechLogos>
             <ion-icon name="logo-react"></ion-icon>
             <ion-icon name="logo-html5"></ion-icon>
