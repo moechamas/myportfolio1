@@ -103,6 +103,7 @@ const Contact = () => {
     
     emailjs.send(serviceID, templateID, templateParams, publicKey)
       .then(function(response) {
+        // eslint-disable-next-line eqeqeq
         if(response.status == '200') {
           Swal.fire(
             'Success!',
