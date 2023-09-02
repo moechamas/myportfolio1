@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 // Create the styled component for scroll control.
 const ProjectsContainer = styled.section`
-  overflow-y: auto;
-  max-height: 100vh;  
+  overflow-y: hidden;
+   
 `;
 
 const ProjectsRow = styled.div`
