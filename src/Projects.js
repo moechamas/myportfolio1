@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 // Create the styled component for scroll control.
 const ProjectsContainer = styled.section`
-  overflow-y: hidden;
+  overflow-x: hidden;
    
 `;
 
